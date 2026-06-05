@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+  <meta name="theme-color" content="#ffe7f1" />
+  <title>はみがき</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icon-192.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="app" class="app" aria-label="はみがきアプリ">
+    <img id="stageImage" class="stage-art" src="stage0.jpg" alt="" draggable="false" />
+    <button id="startButton" class="apple-hit" aria-label="スタート"></button>
+    <div id="cleanFlash" class="clean-flash" aria-hidden="true"></div>
+    <div id="bigStars" class="big-stars" aria-hidden="true">
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    </div>
+    <div id="bubbleParty" class="bubble-party" aria-hidden="true">
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    </div>
+
+    <div id="cleanDecor" class="clean-decor" aria-hidden="true">
+      <i class="star left"></i><i class="star left small"></i><i class="bubble left"></i><i class="bubble left small"></i>
+      <i class="star center"></i><i class="star center small"></i><i class="bubble center"></i><i class="bubble center small"></i>
+      <i class="star right"></i><i class="star right small"></i><i class="bubble right"></i><i class="bubble right small"></i>
+    </div>
+    <div id="celebration" class="celebration" aria-hidden="true">
+      <div class="burst"></div>
+      <div class="popper"><span></span></div>
+      <b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
+    </div>
+    <div id="portraitGuide" class="portrait-guide" aria-hidden="true"><div class="phone-mark"></div><div class="turn-text">横向きにしてリンゴを押してね</div></div>
+    <audio id="song" src="brush_song.m4a" preload="auto" playsinline></audio>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
